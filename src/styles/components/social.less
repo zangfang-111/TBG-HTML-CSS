@@ -1,0 +1,107 @@
+@social_subnav_height_xs: 20px;
+
+#header {
+  
+  & #menu-social {
+    .block();
+    list-style: none;
+    height: @nav_height_xs;
+  
+    &>.menu-item {
+      .block();
+      display: inline-block;
+      height: @nav_height_xs;
+      padding-right: 80px;
+      text-transform: lowercase;
+      
+      &>a,
+      &>a:link,
+      &>a:visited {
+        .block();
+        height: @nav_height_xs;
+        font-family: @font-primary;
+        font-size: @base-font-size;
+        text-decoration: none;
+        text-align: left;
+        color: @color-brand-gray-dark;
+        line-height: (@nav_height_xs * 2) - 10;
+      }
+      
+      &>a:hover,
+      &>a:focus,
+      &>a:active {
+        text-decoration: line-through;
+        color: @color-brand-gray-dark;
+      }
+      
+      &.current-menu-item {
+       
+        &>a {
+         text-decoration: line-through;
+         color: @color-brand-gray-dark;
+        }
+      }
+      
+      /* ------- BEGIN: SOCIAL SUB NAV ------- */
+      & > #menu-social-sub {
+        .block();
+        position: absolute;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        display: none;
+        background-color: @color-white;
+      
+        &>.menu-item {
+          .block();
+          height: @social_subnav_height_xs;
+          //padding-right: 80px;
+          text-transform: lowercase;
+          
+          &>a,
+          &>a:link,
+          &>a:visited {
+            .block();
+            height: @social_subnav_height_xs;
+            font-family: @font-primary;
+            font-size: @base-font-size;
+            text-decoration: none;
+            text-align: left;
+            color: @color-brand-gray-dark;
+            line-height: @social_subnav_height_xs;
+          }
+          
+          &>a:hover,
+          &>a:focus,
+          &>a:active {
+            text-decoration: line-through;
+            color: @color-brand-gray-dark;
+          }
+        }
+      }
+      /* ------- END: SOCIAL SUB NAV ------- */
+      
+      &:hover > #menu-social-sub {
+        display: block;
+      }
+    }
+  }
+  
+  &.compact {
+    
+    & #menu-social {
+      height: @nav_height_xs_compact;
+    
+      &>.menu-item {
+        height: @nav_height_xs_compact;
+        
+        &>a,
+        &>a:link,
+        &>a:visited {
+          height: @nav_height_xs_compact;
+          line-height: @nav_height_xs_compact + 20;
+        }
+      }
+    }
+  }
+}

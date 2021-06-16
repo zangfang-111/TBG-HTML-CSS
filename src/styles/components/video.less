@@ -1,0 +1,21 @@
+#video-bg-wrapper {
+	z-index: 1;
+	opacity: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transition: opacity .5s ease-in-out;
+	background: @color-black;
+	
+	&.open {
+  	z-index: 9990;
+    opacity: 1;
+	}
+	
+	& #video-bg {
+  	
+	}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "tbg",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-bust-cache": "^1.0.2",
+    "grunt-cache-bust": "^1.6.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-htmlmin": "^2.4.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-imageoptim": "^1.4.4",
+    "grunt-newer": "latest",
+    "grunt-pngquant": "latest",
+    "grunt-real-favicon": "^0.2.0",
+    "grunt-svgmin": "~4.0.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "load-grunt-tasks": "latest"
+  },
+  "dependencies": {
+    "masonry-layout": "^4.2.1"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "TBG",
+  "description": "A collection of 3rd-party vendor libs that power the site.",
+  "version": "1.0.0",
+  "authors": [
+    "Graham Lambertson <graham@seventhscout.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "owl-carousel2": "latest",
+    "responsive-images": "^1.0.3",
+    "isMobile": "^0.4.1",
+    "jquery.easing": "jquery-easing-original#^1.4.1",
+    "font-awesome": "fontAwesome#^4.7.0",
+    "imagesloaded": "^4.1.3",
+    "equalize": "^1.0.2",
+    "waypoints": "jquery-waypoints#^4.0.1"
+  }
+}

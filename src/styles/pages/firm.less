@@ -1,0 +1,134 @@
+body.firm {
+  .firm-nav {
+    display: none;
+  }
+  .firm-container {
+    .page-title {
+      margin-top: 160px;
+      margin: 100px 10px 50px 10px;
+    
+      h2 {
+        font-size: 24px;
+        font-weight: lighter;
+      }
+    }
+    img {
+      width: 100%;
+    }
+
+    .info-section {
+      padding: 0 0 50px 0;
+
+      .small-image {
+        margin-left: 0;
+        margin-bottom: 50px;
+      }
+
+      &.process {
+        .left-padding {
+          padding-left: 15px;
+        }
+      }
+      &.member {
+        background-color: #F8F8F8;
+        padding: 50px 0 50px 15px;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+          font-weight: lighter;
+          &.active, &:hover {
+            text-decoration: line-through;
+          }
+          i {
+            font-weight: lighter;
+            font-size: 12px;
+          }
+        }  
+        .col-xs-12, .col-xs-6 {
+          padding-left: 0;
+        }  
+      }
+      &.contact {
+        padding: 50px 15px 0;
+        .text-container {
+          padding: 50px 0 20px;
+        }
+      }
+    }
+  }
+}
+
+// ------------------------------------------- @tablet--------------------------------------
+@media (min-width: @tablet) {
+  body.firm {
+    .firm-container {
+      .page-title {
+        margin: 200px 0 0 220px;
+        max-width: 640px;
+  
+        h2 {
+          font-size: 30px;
+        }
+      }
+      .info-section {
+        .small-image {
+          margin-left: auto;
+        }
+        &.process {
+          margin-bottom: 50px;
+        }
+        &.member {
+          padding: 100px;
+          .title {
+            max-width: 360px;
+          }
+          .filters > div {
+            padding: 0 0 10px 0;
+          }
+          .carousel-container {
+            padding: 15px;
+
+            .carousel-nav-container {
+              padding: 0 10px;
+      
+              .owl-next, .owl-prev {
+                background: none;
+                border: 0;
+                font-size: 36px;
+                font-weight: lighter;
+                line-height: 18px;
+                color: inherit;
+                opacity: 0.7
+              }
+            }                
+          }
+        }
+        &.contact {
+          padding-top: 0;
+          padding-bottom: 50px;
+          position: relative;
+          .text-container {
+            position: absolute;
+            top: 16%;
+            left: 50%;
+            background-color: @color-white;
+            padding: 10px 20px;
+          }
+        }
+        &.address {
+          padding: 50px;
+        }
+      }
+    }
+  }
+}
+
+// ------------------------------------------- @desktop--------------------------------------
+@media (min-width: @desktop) {
+  body.firm {
+    .firm-nav {
+      display: block;
+    }    
+  }
+}

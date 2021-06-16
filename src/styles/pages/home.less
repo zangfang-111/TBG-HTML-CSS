@@ -1,0 +1,132 @@
+/* ======= BEGIN: VARIABLES ======= */
+@opening_para_height_xs: 45vh;
+@opening_para_height_sm: 100px;
+@opening_para_height_md: 100px;
+@opening_para_height_lg: 100px;
+@opening_para_height_xl: 100px;
+@brand-img: ~"../../images/";
+/* ======= BEGIN: VIEWPORT XS ======= */
+
+body.home {
+  .block();
+  height: 100vh;
+  overflow: auto;
+
+  & #opening-paragraph-wrapper {
+    .block();
+    position: fixed;
+    width: 100%;
+    height: @opening_para_height_xs;
+    top: @nav_height_xs;
+    left: 0;
+    z-index: 11;
+
+    & div {
+      height: inherit;
+    }
+
+    & div#opening-paragraph {
+      .block();
+      height: auto;
+      padding-left: 15px;
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+    }
+  }
+
+  & #opening-paragraph-offset {
+    .block();
+    width: 100%;
+    height: @opening_para_height_xs;
+  }
+
+  & #home-carousel {
+    z-index: 90;
+    margin-top: 300px;
+
+    & .item {
+      height: 100vh;
+    }
+  }
+
+  & .home-carousel-nav {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    margin-top: -21px;
+    color: @color-white;
+
+    &:link,
+    &:visited,
+    &:focus,
+    &:hover,
+    &:active {
+      color: @color-white;
+    }
+
+    &.disabled {
+      opacity: 0.5;
+
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+
+    &#home-carousel-nav-left {
+      left: 1%;
+    }
+
+    &#home-carousel-nav-right {
+      right: 1%;
+    }
+  }
+
+  & .item {
+    height: auto;
+    background-image: url(/images/chuttersnap.jpg);
+    background-size: cover !important;
+
+    & .display-table-cell {
+      padding: 20px 0;
+    }
+  }
+  .page-title {
+    margin-top: 160px;
+    margin-left: calc(~"50% - 143px");
+    width: 286px;
+    position: fixed;
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
+
+// ------------------------------------------- @tablet--------------------------------------
+@media (min-width: @tablet) {
+  body.home {
+    .page-title {
+      margin: 200px 0 0 220px;
+      width: 501px;
+
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+
+}
+// ------------------------------------------- @desktop--------------------------------------
+@media (min-width: @desktop) {
+
+}
+
+// ------------------------------------------- @large--------------------------------------
+@media (min-width: @large) {
+
+}
+
+@media (min-width: @xlarge) {
+
+}
